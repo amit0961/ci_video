@@ -10,6 +10,9 @@ class Video extends CI_Controller {
 		$this->load->model('category_model');
 
 		$data = array();
+		if (!$this->session->userdata('userlogin')){
+			redirect('user/login');
+		}
 	}
 	public function addVideos(){
 		$data = array();

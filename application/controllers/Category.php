@@ -7,6 +7,9 @@ class Category extends CI_Controller {
 		parent::__construct();
 		$this->load->model('category_model');
 		$data = array();
+		if (!$this->session->userdata('userlogin')){
+			redirect('user/login');
+		}
 	}
 	public function addCategories(){
 		$data = array();

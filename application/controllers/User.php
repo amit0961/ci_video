@@ -30,4 +30,10 @@ class User extends CI_Controller
 			redirect('user/login');
 		}
 	}
+	public function logout(){
+		$this->session->unset_userdata($userid);
+		$this->session->set_userdata('userlogin', FALSE);
+		$this->session->sess_destroy();
+		redirect('user/login');
+	}
 }

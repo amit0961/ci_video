@@ -9,6 +9,9 @@ class Channel extends CI_Controller
 		$this->load->model('channel_model');
 		$this->load->helper('url','form');
 		$data = array();
+		if (!$this->session->userdata('userlogin')){
+			redirect('user/login');
+		}
 	}
 
 	public function addChannels()

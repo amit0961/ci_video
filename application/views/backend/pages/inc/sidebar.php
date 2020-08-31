@@ -121,11 +121,11 @@
 					</ul>
 				</li>
 
-				<li class="nav-header">LABELS</li>
+				<li class="nav-header">SETTINGS</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">
+					<a href="<?php echo base_url() ; ?>user/logout" class="nav-link">
 						<i class="nav-icon far fa-circle text-danger"></i>
-						<p class="text">Important</p>
+						<p class="text">LOG-OUT</p>
 					</a>
 				</li>
 			</ul>
